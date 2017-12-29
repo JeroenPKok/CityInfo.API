@@ -8,7 +8,7 @@ namespace CityInfo.API
 {
     public class PointOfInterestForCreationDto
     {
-        [Required]
+        [Required(ErrorMessage = "You must supply a value for the Name parameter.")]
         [MaxLength(50)]
         public string Name { get; set; }
 
